@@ -21,6 +21,45 @@ This project implements a redundant enterprise network architecture consisting o
 
 ![Enterprise Network Topology](01-topology.png)
 
+## Network Architecture
+
+The network follows a hierarchical enterprise architecture with redundant infrastructure across the WAN, Core, Distribution, and Access layers.
+
+### WAN / Internet Edge
+- ISP Router
+- Two redundant Edge Routers
+
+### Core Layer
+- CORE-SW1
+- CORE-SW2
+- Layer 3 routing
+- OSPF
+- Redundant paths
+
+### Distribution Layer
+- DIST-SW1
+- DIST-SW2
+- Inter-VLAN Routing
+- HSRP
+- ACLs
+- DHCP Relay
+
+### Access Layer
+- ACCESS-SW1
+- ACCESS-SW2
+- VLAN-based segmentation
+- Redundant uplinks
+- STP
+- Port Security
+
+### Endpoints and Services
+- Corporate PCs
+- Cisco IP Phones
+- Corporate Wi-Fi
+- Guest Wi-Fi
+- DHCP / DNS / AAA Server
+- Web / FTP / Email Server
+  
 ## Key Technologies
 
 - VLANs

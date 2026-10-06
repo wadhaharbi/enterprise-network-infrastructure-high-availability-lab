@@ -19,7 +19,7 @@ This project implements a redundant enterprise network architecture consisting o
 
 ## Network Topology
 
-![Enterprise Network Topology](enterprise-network-topology.png)
+![Enterprise Network Topology](01-topology.png)
 
 ## Key Technologies
 

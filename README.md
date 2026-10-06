@@ -17,6 +17,10 @@ This project implements a redundant enterprise network architecture consisting o
 - Corporate Wi-Fi
 - Guest Wi-Fi
 
+## Network Topology
+
+![Enterprise Network Topology](enterprise-network-topology.png)
+
 ## Key Technologies
 
 - VLANs

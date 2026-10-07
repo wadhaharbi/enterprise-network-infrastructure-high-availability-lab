@@ -139,7 +139,8 @@ Security controls were implemented at both the management and Layer 2 levels.
 - Dynamic ARP Inspection
 - VLAN segmentation
 - Guest network isolation
-[10/7/2026 11:59 AM] H.A: These controls help protect the switching infrastructure and reduce unauthorized access.
+
+These controls help protect the switching infrastructure and reduce unauthorized access.
 
 ---
 
@@ -301,7 +302,8 @@ Through this project, I gained practical experience in:
 ---
 
 📂 Repository Structure
-[10/7/2026 11:59 AM] H.A: enterprise-network-infrastructure-high-availability-lab/
+
+enterprise-network-infrastructure-high-availability-lab/
 │
 ├── documentation/
 │

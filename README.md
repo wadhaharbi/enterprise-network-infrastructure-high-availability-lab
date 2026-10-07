@@ -1,12 +1,13 @@
-<h1><strong>Enterprise Network Infrastructure & High Availability Lab</strong></h1><p align="center">
-  <strong>Cisco Packet Tracer</strong> • <strong>Routing & Switching</strong> • <strong>Network Security</strong> • <strong>High Availability</strong>
-</p>
-
-A hands-on enterprise network infrastructure project designed and implemented using Cisco Packet Tracer and Cisco IOS.
-
-The lab simulates a corporate network environment with VLAN segmentation, OSPF dynamic routing, HSRP gateway redundancy, LACP EtherChannel, network services, Layer 2 security, and guest network isolation.
-
----
+<h1 align="center"><strong>Enterprise Network Infrastructure & High Availability Lab</strong></h1><p align="center">
+  <strong>Cisco Packet Tracer</strong> •
+  <strong>Routing & Switching</strong> •
+  <strong>Network Security</strong> •
+  <strong>High Availability</strong>
+</p><p align="center">
+  A hands-on enterprise network infrastructure project designed and implemented using <strong>Cisco Packet Tracer</strong> and <strong>Cisco IOS</strong>.
+</p><p align="center">
+  The lab simulates a corporate network environment with VLAN segmentation, OSPF dynamic routing, HSRP gateway redundancy, LACP EtherChannel, network services, Layer 2 security, and guest network isolation.
+</p>---
 
 📌 Project Overview
 
@@ -49,7 +50,7 @@ OSPF is used as the dynamic routing protocol to provide communication between La
 
 <p align="center">
   <img src="./screenshots/02-ospf-neighbors.png" alt="OSPF Neighbors" width="800">
-</p>OSPF provides:
+</p>OSPF Provides
 
 - Dynamic route exchange
 - Automatic path selection
@@ -69,7 +70,7 @@ HSRP provides default gateway redundancy for end devices.
   <img src="./screenshots/03-hsrp.png" alt="HSRP Configuration" width="800">
 </p>The distribution switches operate as an active/standby gateway pair. If the active gateway becomes unavailable, the standby device can take over gateway responsibilities.
 
-Benefits:
+Benefits
 
 - Redundant default gateway
 - Gateway failover
@@ -84,7 +85,7 @@ LACP EtherChannel combines multiple physical links into a single logical connect
 
 <p align="center">
   <img src="./screenshots/04-etherchannel.png" alt="EtherChannel Configuration" width="800">
-</p>Benefits:
+</p>Benefits
 
 - Link redundancy
 - Increased bandwidth
@@ -150,7 +151,7 @@ DHCP Snooping was implemented to help protect clients from unauthorized DHCP ser
 
 <p align="center">
   <img src="./screenshots/08-dhcp%20snooping.png" alt="DHCP Snooping" width="800">
-</p>Protection against:
+</p>Protection Against
 
 - Rogue DHCP servers
 - Unauthorized DHCP responses
@@ -330,26 +331,27 @@ enterprise-network-infrastructure-high-availability-lab/
 
 📄 Packet Tracer Project
 
-"Open Cisco Packet Tracer Project →" (./Enterprise_Network_Infrastructure_High_Availability.pkt)
-
----
+<p align="center">
+  <a href="./Enterprise_Network_Infrastructure_High_Availability.pkt">
+    <strong>⬇️ Open Cisco Packet Tracer Project</strong>
+  </a>
+</p>---
 
 👩‍💻 Author
 
-Wadha Alharbi
-
-Computer Science & Engineering Graduate
+<h3>Wadha Alharbi</h3><strong>Computer Science & Engineering Graduate</strong><br>
 Network Engineering & IT Infrastructure
 
-"Network Engineering" · "Network Operations" · "Routing & Switching" · "IT Infrastructure"
+<br>"Network Engineering" · "Network Operations" · "Routing & Switching" · "IT Infrastructure"
 
-Connect:
+Connect
+
 "LinkedIn" (https://linkedin.com/in/wadha-alharbi) · "GitHub" (https://github.com/wadhaharbi)
 
 ---
 
-⭐ Project Focus
-
-«Design → Configure → Secure → Troubleshoot → Verify»
-
-This project demonstrates practical application of enterprise networking concepts with a focus on routing & switching, network infrastructure, high availability, network security, and resilient network design.
+<h3 align="center">⭐ Project Focus</h3><p align="center">
+  <strong>Design → Configure → Secure → Troubleshoot → Verify</strong>
+</p><p align="center">
+  This project demonstrates practical application of enterprise networking concepts with a focus on <strong>routing & switching, network infrastructure, high availability, network security, and resilient network design.</strong>
+</p>

@@ -1,6 +1,6 @@
---Enterprise Network Infrastructure & High Availability Lab
-
-Cisco Packet Tracer | Routing & Switching | Network Security | High Availability
+<h1><strong>Enterprise Network Infrastructure & High Availability Lab</strong></h1><p align="center">
+  <strong>Cisco Packet Tracer</strong> • <strong>Routing & Switching</strong> • <strong>Network Security</strong> • <strong>High Availability</strong>
+</p>
 
 A hands-on enterprise network infrastructure project designed and implemented using Cisco Packet Tracer and Cisco IOS.
 

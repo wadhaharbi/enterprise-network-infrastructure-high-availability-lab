@@ -1,4 +1,4 @@
-[10/7/2026 11:59 AM] H.A: Enterprise Network Infrastructure & High Availability Lab
+Enterprise Network Infrastructure & High Availability Lab
 
 Cisco Packet Tracer | Routing & Switching | Network Security | High Availability
 

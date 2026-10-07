@@ -1,4 +1,4 @@
-Enterprise Network Infrastructure & High Availability Lab
+--Enterprise Network Infrastructure & High Availability Lab
 
 Cisco Packet Tracer | Routing & Switching | Network Security | High Availability
 
@@ -322,7 +322,7 @@ enterprise-network-infrastructure-high-availability-lab/
 │   ├── 12-email.png
 │   └── 13-guest-isolation.png
 │
-├── Enterprise Network Infrastructure High Availability.pkt
+├── Enterprise_Network_Infrastructure_High_Availability.pkt
 │
 └── README.md
 
@@ -330,7 +330,7 @@ enterprise-network-infrastructure-high-availability-lab/
 
 📄 Packet Tracer Project
 
-"Open Cisco Packet Tracer Project →" (./Enterprise%20Network%20Infrastructure%20High%20Availability.pkt)
+"Open Cisco Packet Tracer Project →" (./Enterprise_Network_Infrastructure_High_Availability.pkt)
 
 ---
 
@@ -341,7 +341,7 @@ Wadha Alharbi
 Computer Science & Engineering Graduate
 Network Engineering & IT Infrastructure
 
-"Network Engineering" · "Network Operations" · "Routing & Switching" · "IT Infrastructure" · "Network Automation"
+"Network Engineering" · "Network Operations" · "Routing & Switching" · "IT Infrastructure"
 
 Connect:
 "LinkedIn" (https://linkedin.com/in/wadha-alharbi) · "GitHub" (https://github.com/wadhaharbi)

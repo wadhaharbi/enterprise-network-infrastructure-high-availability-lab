@@ -1,49 +1,45 @@
-Enterprise Network Infrastructure & High Availability Lab
+[10/7/2026 11:59 AM] H.A: Enterprise Network Infrastructure & High Availability Lab
 
-«Enterprise Network Design • Routing & Switching • High Availability • Network Security»
+Cisco Packet Tracer | Routing & Switching | Network Security | High Availability
 
-A hands-on enterprise network infrastructure lab built using Cisco Packet Tracer and Cisco IOS.
+A hands-on enterprise network infrastructure project designed and implemented using Cisco Packet Tracer and Cisco IOS.
 
-The project simulates a corporate network environment with VLAN segmentation, OSPF dynamic routing, HSRP gateway redundancy, EtherChannel, network services, Layer 2 security, and guest network isolation.
+The lab simulates a corporate network environment with VLAN segmentation, OSPF dynamic routing, HSRP gateway redundancy, LACP EtherChannel, network services, Layer 2 security, and guest network isolation.
 
 ---
 
 📌 Project Overview
 
-This project was designed to simulate a resilient enterprise network infrastructure with a focus on:
+This project focuses on designing and implementing a resilient enterprise network infrastructure with emphasis on:
 
-- Enterprise network architecture
-- Routing and switching
-- VLAN segmentation
-- Dynamic routing using OSPF
-- Gateway redundancy using HSRP
-- Link redundancy using EtherChannel
-- Enterprise network services
-- Layer 2 security
-- Guest network isolation
-- Network troubleshooting and verification
-
-The goal was to design, configure, test, and document a network that remains operational during common infrastructure failures.
+- 🔄 High availability and redundancy
+- 🌐 Routing and switching
+- 🏷️ VLAN segmentation
+- 🚦 OSPF dynamic routing
+- 🛡️ HSRP gateway redundancy
+- 🔗 LACP EtherChannel
+- 🖥️ Enterprise network services
+- 🔐 Layer 2 security
+- 🚫 Guest network isolation
+- 🧪 Network testing and verification
 
 ---
 
 🏗️ Network Topology
 
-The network uses a hierarchical design with redundant Layer 3 switching and segmented access networks.
+The network follows a hierarchical enterprise design with redundant Layer 3 switching and segmented access networks.
 
-"Enterprise Network Topology" (./screenshots/01-topology.png)
+<p align="center">
+  <img src="./screenshots/01-topology.png" alt="Enterprise Network Topology" width="900">
+</p>Key Components
 
-Main Design Components
-
-- Redundant distribution switches
-- Layer 3 switching
-- OSPF dynamic routing
-- HSRP gateway redundancy
-- VLAN-based segmentation
-- EtherChannel / LACP
-- Access layer switching
-- Dedicated server infrastructure
-- Corporate and guest networks
+Layer| Components
+Core / L3| Layer 3 switching, OSPF
+Distribution| HSRP, Inter-VLAN Routing
+Access| VLANs, Trunking, STP
+Servers| DHCP, DNS, Web, Email
+Security| Port Security, DHCP Snooping, DAI
+Redundancy| HSRP, EtherChannel, OSPF
 
 ---
 
@@ -51,19 +47,17 @@ Main Design Components
 
 OSPF is used as the dynamic routing protocol to provide communication between Layer 3 devices and redundant routing paths.
 
-OSPF Configuration & Verification
-
-"OSPF Neighbors" (./screenshots/02-ospf-neighbors.png)
-
-OSPF provides:
+<p align="center">
+  <img src="./screenshots/02-ospf-neighbors.png" alt="OSPF Neighbors" width="800">
+</p>OSPF provides:
 
 - Dynamic route exchange
 - Automatic path selection
 - Redundant Layer 3 paths
-- Faster convergence
+- Network convergence
 - Scalable routing
 
-OSPF neighbor relationships were verified to ensure that the Layer 3 routing infrastructure was operating correctly.
+OSPF neighbor relationships were verified to ensure correct operation of the routing infrastructure.
 
 ---
 
@@ -71,33 +65,31 @@ OSPF neighbor relationships were verified to ensure that the Layer 3 routing inf
 
 HSRP provides default gateway redundancy for end devices.
 
-The distribution switches operate as an active/standby gateway pair. If the active gateway becomes unavailable, the standby device can take over gateway responsibilities.
+<p align="center">
+  <img src="./screenshots/03-hsrp.png" alt="HSRP Configuration" width="800">
+</p>The distribution switches operate as an active/standby gateway pair. If the active gateway becomes unavailable, the standby device can take over gateway responsibilities.
 
-"HSRP Configuration" (./screenshots/03-hsrp.png)
-
-High Availability Benefits
+Benefits:
 
 - Redundant default gateway
-- Reduced single point of failure
 - Gateway failover
+- Reduced single point of failure
 - Improved network availability
 
 ---
 
 🔗 EtherChannel / LACP
 
-EtherChannel was implemented using LACP to combine multiple physical links into a single logical connection.
+LACP EtherChannel combines multiple physical links into a single logical connection.
 
-"EtherChannel Configuration" (./screenshots/04-etherchannel.png)
-
-Benefits
+<p align="center">
+  <img src="./screenshots/04-etherchannel.png" alt="EtherChannel Configuration" width="800">
+</p>Benefits:
 
 - Link redundancy
 - Increased bandwidth
 - Improved resiliency
-- Logical management of multiple physical interfaces
-
-The configuration was verified to ensure the bundled links were operating correctly.
+- Simplified logical management
 
 ---
 
@@ -105,9 +97,9 @@ The configuration was verified to ensure the bundled links were operating correc
 
 VLANs are used to logically separate different types of network traffic.
 
-"VLAN Configuration" (./screenshots/05-vlans.png)
-
-VLAN| Name| Purpose
+<p align="center">
+  <img src="./screenshots/05-vlans.png" alt="VLAN Configuration" width="800">
+</p>VLAN| Name| Purpose
 10| MANAGEMENT| Network device management
 20| USERS| Corporate users
 30| VOICE| IP telephony
@@ -116,15 +108,7 @@ VLAN| Name| Purpose
 60| WIFI-GUEST| Guest wireless
 99| NATIVE-MGMT| Native / management traffic
 
-Why VLAN Segmentation?
-
-VLAN segmentation improves:
-
-- Network organization
-- Traffic separation
-- Security
-- Broadcast domain management
-- Troubleshooting
+VLAN segmentation improves network organization, traffic separation, security, and troubleshooting.
 
 ---
 
@@ -132,9 +116,9 @@ VLAN segmentation improves:
 
 802.1Q trunking is used to carry multiple VLANs across inter-switch links.
 
-"Trunk Configuration" (./screenshots/06-trunks.png)
-
-Trunk links allow VLAN traffic to be transported between switches while maintaining logical segmentation across the network.
+<p align="center">
+  <img src="./screenshots/06-trunks.png" alt="Trunk Configuration" width="800">
+</p>Trunk links allow multiple VLANs to traverse the same physical connection while maintaining logical network segmentation.
 
 ---
 
@@ -142,9 +126,9 @@ Trunk links allow VLAN traffic to be transported between switches while maintain
 
 Security controls were implemented at both the management and Layer 2 levels.
 
-"Network Security" (./screenshots/07-security.png)
-
-Security Controls
+<p align="center">
+  <img src="./screenshots/07-security.png" alt="Network Security Configuration" width="800">
+</p>Security Controls
 
 - SSH
 - Local authentication
@@ -155,23 +139,21 @@ Security Controls
 - Dynamic ARP Inspection
 - VLAN segmentation
 - Guest network isolation
-[10/7/2026 11:54 AM] H.A: These controls help protect the switching infrastructure and reduce unauthorized network access.
+[10/7/2026 11:59 AM] H.A: These controls help protect the switching infrastructure and reduce unauthorized access.
 
 ---
 
 🛡️ DHCP Snooping
 
-DHCP Snooping was implemented as a Layer 2 security mechanism to help protect clients from unauthorized DHCP servers.
+DHCP Snooping was implemented to help protect clients from unauthorized DHCP servers.
 
-"DHCP Snooping" (./screenshots/08-dhcp%20snooping.png)
-
-DHCP Snooping helps prevent:
+<p align="center">
+  <img src="./screenshots/08-dhcp%20snooping.png" alt="DHCP Snooping" width="800">
+</p>Protection against:
 
 - Rogue DHCP servers
 - Unauthorized DHCP responses
-- DHCP-based network attacks
-
-The configuration was verified to ensure trusted and untrusted interfaces were handled appropriately.
+- DHCP-based attacks
 
 ---
 
@@ -179,9 +161,9 @@ The configuration was verified to ensure trusted and untrusted interfaces were h
 
 DHCP provides automatic IP address assignment to network clients.
 
-"DHCP" (./screenshots/09-dhcp.png)
-
-The DHCP configuration was tested to verify that clients could obtain their network configuration automatically.
+<p align="center">
+  <img src="./screenshots/09-dhcp.png" alt="DHCP Configuration" width="800">
+</p>The DHCP configuration was tested to verify automatic network configuration for clients.
 
 ---
 
@@ -189,19 +171,19 @@ The DHCP configuration was tested to verify that clients could obtain their netw
 
 DNS provides hostname resolution for internal network services.
 
-"DNS" (./screenshots/10-dns.png)
-
-The DNS service was configured to allow clients to resolve internal hostnames and services.
+<p align="center">
+  <img src="./screenshots/10-dns.png" alt="DNS Configuration" width="800">
+</p>DNS was configured to allow clients to resolve internal hosts and services.
 
 ---
 
-🌐 Web Server
+🌐 Web Service
 
-A web server was configured to simulate an internal enterprise application/service.
+A web server was configured to simulate an internal enterprise application.
 
-"Web Server" (./screenshots/11-web.png)
-
-This was used to verify application-level connectivity across the network.
+<p align="center">
+  <img src="./screenshots/11-web.png" alt="Web Server" width="800">
+</p>The service was tested to verify application-level connectivity across the network.
 
 ---
 
@@ -209,21 +191,21 @@ This was used to verify application-level connectivity across the network.
 
 An email service was configured to simulate internal enterprise communication.
 
-"Email Service" (./screenshots/12-email.png)
-
-Email connectivity was tested between network clients to verify communication with the mail server.
+<p align="center">
+  <img src="./screenshots/12-email.png" alt="Email Service" width="800">
+</p>Email connectivity was tested between network clients and the mail server.
 
 ---
 
 🚫 Guest Network Isolation
 
-The guest wireless network is separated from the corporate network using VLAN-based segmentation and access controls.
+The guest network is logically separated from corporate resources using VLAN segmentation and access controls.
 
-"Guest Network Isolation" (./screenshots/13-guest-isolation.png)
+<p align="center">
+  <img src="./screenshots/13-guest-isolation.png" alt="Guest Network Isolation" width="800">
+</p>Objective
 
-Objective
-
-Guest devices should be able to access permitted external/network services without gaining unnecessary access to internal corporate resources.
+Guest devices should have access only to permitted network services while remaining isolated from internal corporate resources.
 
 This demonstrates the practical use of network segmentation and traffic isolation in an enterprise environment.
 
@@ -270,7 +252,7 @@ Security
 
 📊 High Availability Design
 
-Component| Implementation
+Area| Implementation
 Dynamic Routing| OSPF
 Default Gateway Redundancy| HSRP
 Link Redundancy| LACP EtherChannel
@@ -286,39 +268,21 @@ Guest Isolation| VLAN Segmentation
 
 Networking
 
-- Cisco Packet Tracer
-- Cisco IOS
-- VLANs
-- 802.1Q Trunking
-- Inter-VLAN Routing
-- OSPF
-- HSRP
-- STP
-- EtherChannel / LACP
+"Cisco Packet Tracer" · "Cisco IOS" · "VLANs" · "802.1Q" · "Inter-VLAN Routing" · "OSPF" · "HSRP" · "STP" · "EtherChannel / LACP"
 
 Network Services
 
-- DHCP
-- DNS
-- Web
-- Email
+"DHCP" · "DNS" · "Web" · "Email"
 
 Security
 
-- SSH
-- Port Security
-- Sticky MAC
-- BPDU Guard
-- DHCP Snooping
-- Dynamic ARP Inspection
-- Network Segmentation
-- Guest Network Isolation
+"SSH" · "Port Security" · "Sticky MAC" · "BPDU Guard" · "DHCP Snooping" · "Dynamic ARP Inspection" · "Network Segmentation"
 
 ---
 
 🎯 Key Learning Outcomes
 
-This project provided practical experience in:
+Through this project, I gained practical experience in:
 
 - Designing enterprise network architectures
 - Configuring Layer 2 and Layer 3 switching
@@ -328,16 +292,16 @@ This project provided practical experience in:
 - Configuring HSRP gateway redundancy
 - Implementing LACP EtherChannel
 - Configuring DHCP and DNS services
-- Implementing Layer 2 security controls
+- Applying Layer 2 security controls
 - Isolating guest network traffic
-- Troubleshooting routing and switching issues
+- Troubleshooting routing and switching
 - Verifying network redundancy and connectivity
 - Documenting network infrastructure
 
 ---
 
 📂 Repository Structure
-[10/7/2026 11:54 AM] H.A: enterprise-network-infrastructure-high-availability-lab/
+[10/7/2026 11:59 AM] H.A: enterprise-network-infrastructure-high-availability-lab/
 │
 ├── documentation/
 │
@@ -364,9 +328,7 @@ This project provided practical experience in:
 
 📄 Packet Tracer Project
 
-The complete Cisco Packet Tracer project is available below:
-
-"Open the Cisco Packet Tracer Project" (./Enterprise%20Network%20Infrastructure%20High%20Availability.pkt)
+"Open Cisco Packet Tracer Project →" (./Enterprise%20Network%20Infrastructure%20High%20Availability.pkt)
 
 ---
 
@@ -374,16 +336,13 @@ The complete Cisco Packet Tracer project is available below:
 
 Wadha Alharbi
 
-Computer Science & Engineering Graduate | Network Engineering & IT Infrastructure
+Computer Science & Engineering Graduate
+Network Engineering & IT Infrastructure
 
-Interested in:
+"Network Engineering" · "Network Operations" · "Routing & Switching" · "IT Infrastructure" · "Network Automation"
 
-Network Engineering · Network Operations · Routing & Switching · IT Infrastructure · Network Automation
-
-Connect
-
-- "LinkedIn" (https://linkedin.com/in/wadha-alharbi)
-- "GitHub" (https://github.com/wadhaharbi)
+Connect:
+"LinkedIn" (https://linkedin.com/in/wadha-alharbi) · "GitHub" (https://github.com/wadhaharbi)
 
 ---
 
